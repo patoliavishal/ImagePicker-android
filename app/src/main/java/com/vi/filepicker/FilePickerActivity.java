@@ -109,7 +109,7 @@ public class FilePickerActivity extends RuntimePermissionsActivity {
             case R.id.file_btnGallery:
                 if (ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
                     requestAppPermissions(new
-                            String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, R.string.runtime_gallery_permission, REQUEST_PERMISSIONS_CAMERA);
+                            String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, R.string.runtime_gallery_permission, REQUEST_PERMISSIONS_GALLERY);
                 } else {
                     selectGallery();
                 }
@@ -172,6 +172,7 @@ public class FilePickerActivity extends RuntimePermissionsActivity {
                         });
                 AlertDialog alert = builder.create();
                 alert.setTitle("Thank you");
+                alert.setCanceledOnTouchOutside(true);
                 alert.show();
                 break;
         }
