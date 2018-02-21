@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">File Picker-android</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="runtime_camera_permission">Please enable camera permission</string>
+    <string name="select_image_gallery">Choose Image</string>
+    <string name="runtime_gallery_permission">Please enable read permission</string>
+</resources>
