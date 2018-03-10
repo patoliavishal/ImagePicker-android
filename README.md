@@ -1,6 +1,6 @@
-# FilePicker-android
+# ImagePicker-android
 
-FilePicker give two option for image selection:
+ImagePicker give two option for image selection:
 **Gallery** select internal/external storage images in Oreo 8.0 and below version
 **Camera** taken image using camera
 
